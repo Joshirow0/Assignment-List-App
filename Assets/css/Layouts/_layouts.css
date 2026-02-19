@@ -1,0 +1,33 @@
+/* Sections */
+.doc-container { /* container for <main> */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.doc-section {
+    padding-top: 60px;
+    padding-left: var(--space-l);
+    padding-right: var(--space-l);
+    padding-bottom: 40px;
+    margin-top: var(--space-s);
+    margin-bottom: var(--space-s);
+    border-bottom: 1px solid #333;
+
+    border-radius: 10px;
+    
+}
+
+.doc-section:first-child {
+    padding-top: 0 !important;
+}
+
+.doc-section--contrast{
+    background-color: var(--color-background-contrast);
+}
+
+.grid-container { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px; 
+}

@@ -1,0 +1,32 @@
+/* links (a) */
+.link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    transition: color 0.2s ease;
+    cursor: pointer;
+}
+
+.link--main {
+    color: var(--color-text-secondary);
+}
+.link--main:hover {
+    color: var(--color-highlight);
+}
+
+.link--secondary, .link--outlined {
+    text-decoration: none;
+    color: var(--color-text-muted);
+    transition: none;
+}
+
+.link--secondary:hover {
+    color: #ffffff;
+    transform: scale(1.04);
+}
+
+.link--outlined:hover {
+    color: #929292;
+    text-decoration: underline;
+}

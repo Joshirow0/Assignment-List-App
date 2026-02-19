@@ -1,0 +1,37 @@
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__list {
+    list-style: none;
+    display: flex;
+    gap: var(--space-l);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__link { /* Link designed to be in an <a> tag, just to make font a little bold; Combine with link */
+    font-weight: 700;
+}
+
+/* Breadcrumbs (Migas de pan) */
+.breadcrumbs {
+    list-style: none;
+    display: flex;
+    gap: var(--space-s);
+    color: var(--color-text-muted);
+    font-size: var(--text-small);
+}
+
+.breadcrumbs__item::after {
+    content: '/';
+    margin-left: var(--space-s);
+    opacity: 0.5;
+}
+
+.breadcrumbs__item:last-child::after {
+    content: '';
+}

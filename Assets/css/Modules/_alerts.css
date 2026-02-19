@@ -1,0 +1,28 @@
+/* Alerts */
+.alert {
+    padding: var(--space-m);
+    border-radius: 4px;
+    margin-bottom: var(--space-m);
+    display: flex;
+    align-items: center;
+    gap: var(--space-s);
+    border-left: 4px solid;
+}
+
+.alert--success {
+    background-color: rgba(46, 204, 113, 0.1);
+    border-color: var(--color-success);
+    color: var(--color-success);
+}
+
+.alert--error {
+    background-color: rgba(231, 76, 60, 0.1);
+    border-color: var(--color-error);
+    color: var(--color-error);
+}
+
+.alert--warning {
+    background-color: rgba(241, 196, 15, 0.1);
+    border-color: var(--color-warning);
+    color: var(--color-warning);
+}

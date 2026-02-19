@@ -1,0 +1,28 @@
+/* Pagination */
+.pagination {
+    display: flex;
+    list-style: none;
+    gap: var(--space-s);
+    justify-content: center;
+    margin-top: var(--space-xl);
+}
+
+.pagination__item { 
+    width: 32px;
+    height: 32px; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 50%; 
+    cursor: pointer;
+}
+
+.pagination__item:hover {
+    background-color: #333;
+}
+
+.pagination__item--active {
+    background-color: var(--color-text-main);
+    color: #000;
+}

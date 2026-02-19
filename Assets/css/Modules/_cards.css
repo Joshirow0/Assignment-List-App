@@ -1,0 +1,130 @@
+.card {
+    background-color: var(--color-surface);
+    border-radius: 8px;
+    padding: var(--space-m);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: #383838;
+}
+
+.card--horizontal {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-m);
+
+    height: fit-content;
+}
+
+.card--project {
+    padding: 0;
+    border-radius: 12px;
+    border-color: rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+}
+
+.card--project:hover {
+    background-color: var(--color-surface);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-color: var(--color-highlight);
+}
+
+.card__media {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 4px;
+    margin-bottom: var(--space-m);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+.card--horizontal .card__media {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 0;
+    flex-shrink: 0;
+}
+/* Modifier override: Horizontal Media */
+.card--project .card__media {
+    height: 200px;
+    aspect-ratio: auto;
+    border-radius: 0;
+    margin-bottom: 0;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* --- The Actual Image --- */
+.card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 0.5s ease;
+}
+
+.card--project:hover .card__image {
+    transform: scale(1.1);
+}
+
+.card__header-icon { /* Use it instead of card__media to contain an icon <i>*/
+    height: 140px;
+    background: linear-gradient(135deg, #2d2c38 0%, #1a1920 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: var(--color-highlight);
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card--project .card__body {
+    padding: 1.5rem;
+}
+
+.card__title {
+    font-weight: 700;
+    margin-bottom: var(--space-xs);
+    color: var(--color-text-main);
+}
+
+.card--project .card__title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card__subtitle, .card__description {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+    line-height: 1.5;
+}
+
+.card__description {
+    margin-bottom: 1.5rem;
+}
+
+.card__tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.card__footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+}

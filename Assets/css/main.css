@@ -1,0 +1,27 @@
+/*
+    Estructure: SMACSS
+    CSS: BEM Methodology
+*/
+
+/* Variables */
+@import url('Base/_base.css');
+
+/* Layouts */
+@import url('Layouts/_footer.css');
+@import url('Layouts/_header.css');
+@import url('Layouts/_layouts.css');
+
+/* Components (Clases) */
+@import url('Modules/_alerts.css');
+@import url('Modules/_buttons.css');
+@import url('Modules/_cards.css');
+@import url('Modules/_forms.css');
+@import url('Modules/_headings.css');
+@import url('Modules/_links.css');
+@import url('Modules/_navegation.css');
+@import url('Modules/_pagination.css');
+@import url('Modules/_tags.css');
+
+/* States: N/A*/
+
+/* Themes: N/A*/

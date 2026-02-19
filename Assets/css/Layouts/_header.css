@@ -1,0 +1,24 @@
+
+.header {
+    background-color: var(--color-background-contrast);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: var(--space-m) var(--space-xl);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__logo-link {
+    font-size: var(--text-h3);
+    font-weight: 700;
+    color: var(--color-text-main);
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.header__nav-bar {
+    padding-right: var(--space-m);
+}
