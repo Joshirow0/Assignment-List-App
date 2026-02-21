@@ -28,6 +28,13 @@
 .form__checkbox {
     accent-color: var(--color-accent);
     transform: scale(1.2);
+    cursor: pointer;
+}
+
+.checkbox--m {
+    transform: scale(1); /* Reset size */
+    width: 20px;
+    height: 20px;
 }
 
 .form__textarea {
