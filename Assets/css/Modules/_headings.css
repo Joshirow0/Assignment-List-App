@@ -18,3 +18,12 @@
     font-size: var(--text-body);
     color: var(--color-text-secondary);
 }
+
+.text--muted {
+    color: var(--color-text-muted);
+    text-decoration: line-through;
+}
+
+.padding-top {
+    padding-top: var(--space-m);
+}
