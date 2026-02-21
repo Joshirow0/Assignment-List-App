@@ -19,11 +19,16 @@
 }
 
 .doc-section:first-child {
-    padding-top: 0 !important;
+    padding-top: 40px !important;
 }
 
-.doc-section--contrast{
+.doc-section--contrast {
     background-color: var(--color-background-contrast);
+}
+
+.doc-section--s {
+    padding-top: var(--space-l);
+    padding-bottom: var(--space-s);
 }
 
 .grid-container { 
