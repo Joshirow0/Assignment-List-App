@@ -46,6 +46,20 @@
     border-color: #fff;
 }
 
+.btn--icon {
+    padding: 0;
+
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.2s ease, color 0.2s ease;
+}
+
 .btn:disabled, .btn--disabled {
     opacity: 0.5;
     cursor: not-allowed;
