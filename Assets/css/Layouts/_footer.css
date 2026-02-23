@@ -1,4 +1,4 @@
-.footer { /* Section */
+.footer { /* class for <footer>*/
     background-color: var(--color-background-contrast);
     padding: var(--space-xl) var(--space-m) var(--space-xl);
     margin-top: auto;
@@ -64,4 +64,21 @@
 
 .footer .link {
     font-size: var(--text-small);
+}
+
+.secondary-footer { /* footer for sections <div> */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-m);
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+    
+    flex-wrap: wrap; 
+    gap: var(--space-m);
+}
+
+.secondary-footer__filters {
+    display: flex;
+    gap: var(--space-s);
 }
