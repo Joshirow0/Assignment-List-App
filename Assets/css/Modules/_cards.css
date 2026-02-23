@@ -159,3 +159,8 @@
 .card:hover .btn--icon {
     opacity: 1;
 }
+
+.card.is-dragging { /* CSS style for dragging cards */
+    opacity: 0.4;
+    border: 2px dashed var(--color-primary, #9b59b6);
+}
