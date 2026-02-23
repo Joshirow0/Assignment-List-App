@@ -41,3 +41,17 @@ export function editarTextoTarea(id, nuevoTexto) {
     
     guardarEnStorage(tareas);
 }
+
+export function actualizarOrdenTareas(nuevosIds) {
+    const tareasReordenadas = [];
+    
+    nuevosIds.forEach(id => {
+        const tareaEncontrada = tareas.find(tarea => tarea.id === Number(id));
+        if (tareaEncontrada) {
+            tareasReordenadas.push(tareaEncontrada);
+        }
+    });
+
+    tareas = tareasReordenadas;
+    guardarEnStorage(tareas);
+}
