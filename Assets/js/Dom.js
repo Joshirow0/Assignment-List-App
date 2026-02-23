@@ -25,10 +25,10 @@ export function renderizarTareas(arregloTareas, filtro) {
         li.setAttribute('draggable', 'true');
 
         li.innerHTML = `
-            <label class="card__body body--row">
+            <div class="card__body body--row">
                 <input type="checkbox" class="form__checkbox checkbox--m" ${tarea.completada ? 'checked' : ''}>
                 <span class="card__text ${tarea.completada ? 'text--muted' : ''} texto-tarea">${tarea.texto}</span>
-            </label>
+            </div>
             <button class="btn btn--icon" aria-label="Eliminar tarea">🗑️</button>
         `;
         lista.appendChild(li);

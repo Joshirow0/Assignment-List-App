@@ -30,3 +30,14 @@ export function borrarCompletadas() {
 export function setFiltro(nuevoFiltro) {
     filtroActual = nuevoFiltro;
 }
+
+export function editarTextoTarea(id, nuevoTexto) {
+    tareas = tareas.map(tarea => {
+        if (tarea.id === id) {
+            return { ...tarea, texto: nuevoTexto };
+        }
+        return tarea;
+    });
+    
+    guardarEnStorage(tareas);
+}
