@@ -1,10 +1,17 @@
 /* forms groups */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s);
+}
+
 .form-group {
     margin-bottom: var(--space-m);
 }
 
 .form__label {
     display: block;
+    margin-top: var(--space-s);
     margin-bottom: var(--space-xs);
     font-size: var(--text-body);
     font-weight: 700;
@@ -47,4 +54,8 @@
     font-size: var(--text-body);
     font-family: var(--font-family);
     resize: vertical;
+}
+
+.form__button {
+    margin-top: var(--space-s);
 }
